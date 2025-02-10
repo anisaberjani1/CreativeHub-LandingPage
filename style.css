@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+.header {
+    background-color: #071336;
+    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 7px 100px;
+  font-weight: 400;
+}
+
+.page-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    color: #071336;
+}
+
+.navbar-logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-logo-title{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.navbar-list{
+    list-style-type: none;
+}
+
+.navbar-list-item{
+    display: inline;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+.list-item-select{
+    border: none;
+    padding-right: 5px;
+    font-weight:500;
+}
+
+.main-content{
+    width: 85%;
+    margin: 80px auto;
+}
+
+.main-content-text{
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    color: #000;
+}
+
+.main-content-text-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.main-content-text-paragraph{
+    padding: 0 60px;
+}
+
+.main-content-cards{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.course-card{
+    border: 1px solid black;
+}
+
+.course-card-img{
+    background-color: #c1c4cd;
+    background-image: url('./images/card-img-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+.card-img-2{
+    background-image: url('./images/card-img-2.png');
+    background-position: 33%;
+}
+
+.card-img-3{
+    background-image: url('./images/card-img-3.png');
+    background-position:33%;
+}
+
+.card-img-4{
+    background-image: url('./images/card-img-4.png');
+}
+
+.course-card-info{
+    color: #000;
+}
+
+.bi-circle-fill{
+    color: #d4e8ef;
+}
+
+.course-card-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 25px;
+}
+
+.icon-info{
+    color: #478b80;
+}
+
+.course-card-btn,
+.explore-btn
+{
+    border: none;
+    background-color: #75fa9e;
+    padding: 8px 25px;
+    border-radius: 7px;
+    color: #071336;
+}
+
+.explore-section{
+    background-color: #071336;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.explore-title{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.explore-btn{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.contact-section{
+    width: 95%;
+    margin: 60px auto;
+}
+
+.contact-section{
+    color: #071336;
+}
+
+.contact-rightside{
+    font-weight: 600;
+}
+
+.contact-img{
+    width: 180px;
+    height: 180px;
+    border: 6px solid #071336;
+    background-image:url('./images/contact-img-final.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.contact-text-info{
+    width: 85%;
+}
+
+.contact-title{
+    font-weight: 600;
+}
+
+.contact-paragraph-a{
+    color: #071336;
+    padding: 0 10px;
+}
+
+.contact-btn{
+    border: none;
+    background-color: #75fa9e;
+    color: #071336;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+.contact-icon{
+    padding-right: 5px;
+}
+
+.page-footer{
+    background-color: #071336;
+    color: white;
+}
+
+.columns-footer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-text{
+    color: #8d93a5;
+}
+
+.footer-icons{
+    color: #75fa9e;
+}
+
+.footer-list{
+    font-weight: lighter;
+}
+
+
+
+
+
+
