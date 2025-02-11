@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content{
+    width: 80%;
+    margin: 100px auto;
+    gap: 40px;
+}
+
+.form-subtitle{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.form-content{
+    color: #071336;
+    text-align: center;
+}
+
+.form-input,
+.form-btn
+{
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: 1px solid #cdd0d7;
+}
+
+.form-input::placeholder{
+    color: #939393;
+}
+
+.form-btn{
+    background-color: #75fa9e;
+    border: none;
+    color: #071336;
+    font-weight: 400;
+    font-size: 18px;
+}

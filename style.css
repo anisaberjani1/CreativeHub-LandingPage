@@ -78,6 +78,11 @@ body {
     margin: 80px auto;
 }
 
+.register-link{
+    text-decoration: none;
+    color: #071336;
+}
+
 .course-card{
     border: 1px solid black;
 }
