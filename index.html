@@ -14,25 +14,33 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@300,0,0" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- Header section -->
     <div class="header">
       <p class="header-text m-0">Successful careers <b>made possible.</b></p>
-      <p class="header-number m-0">
-        <i class="bi bi-telephone text-white p-1"></i>
+      <p class="header-number m-0 d-flex">
+        <i class="material-symbols-outlined px-2">
+          phone_in_talk
+          </i>
         +383 49 334 437
       </p>
     </div>
-    <div class="small-screen-navbar d-flex justify-content-between px-5 py-2">
+
+    <!-- Navigation bar for small screen -->
+    <div class="small-screen-navbar d-flex justify-content-between px-4 py-3">
       <div class="navbar-logo">
         <img src="./images/small-screen-logo.png" alt="logo" width="45px" />
         <h5 class="navbar-logo-title-small m-0 px-1">Creative Hub</h5>
       </div>
-      <span class="hamburger-menu">
-        <i class="bi bi-list h1 text-white"></i>
+      <span class="hamburger-menu d-flex align-items-center">
+        <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
       </span>
     </div>
+
+    <!-- Navigation bar -->
     <div class="page-navbar">
       <div class="navbar-logo">
         <img src="./images/ch-logo.png" alt="logo" width="45px" />
@@ -57,7 +65,11 @@
         </li>
       </ul>
     </div>
+
+    <!-- Big screen main content background -->
     <div class="main-content-bg"></div>
+
+    <!-- Main Content section / Cards -->
     <div class="main-content">
       <div class="main-content-text">
         <h1 class="main-content-text-title">Make the first (free) move</h1>
@@ -66,12 +78,13 @@
           your journey. Explore the upcoming courses below!
         </p>
       </div>
+      <!-- Cards -->
       <div class="main-content-cards">
         <div class="row g-5">
           <div class="col-lg-6 col-md-6 col-12 px-3">
             <div class="course-card p-3 d-flex">
               <div class="course-card-img card-img-1 flex-shrink-0"></div>
-              <div class="course-card-info px-3">
+              <div class="course-card-info ps-4">
                 <p class="course-card-subject m-0">
                   <i class="bi bi-circle-fill"></i> Coding
                 </p>
@@ -79,16 +92,16 @@
                   Introduction to React js w / Ragip Gjinovci
                 </h6>
                 <p class="course-card-date m-0 py-1">
-                  <i class="bi bi-headset icon-info"></i>
-                  Thur, Fri, 20 & 21 feb - 6pm
+                  <i class="fa-solid fa-headphones-simple" style="color: #478b80;"></i>
+                  <span class="px-2">Thur, Fri, 20 & 21 feb - 6PM</span>
                 </p>
                 <p class="course-card-location">
                   <i class="bi bi-geo-alt fw-bold icon-info"></i>
-                  Online
+                  <span class="px-2">Online</span>
                 </p>
                 <button class="course-card-btn">
                   <a href="./registerRJ.html" class="register-link">
-                    Sign Up <i class="bi bi-arrow-right"></i>
+                    Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i>
                   </a>      
                 </button>
               </div>
@@ -97,36 +110,51 @@
           <div class="col-lg-6 col-md-6 col-12 px-3">
             <div class="course-card d-flex p-3">
               <div class="course-card-img card-img-2 flex-shrink-0"></div>
-              <div class="course-card-info px-3">
+              <div class="course-card-info ps-4">
                 <p class="course-card-subject m-0"><i class="bi bi-circle-fill"></i> HR</p>
                 <h6 class="course-card-title">How to start a career in hr? W / Hana Gashi Salihu</h6>
-                <p class="course-card-date m-0 py-1"><i class="bi bi-headset icon-info"></i> Mon, Tue, 24 & 25 feb - 6pm</p>
-                <p class="course-card-location"><i class="bi bi-geo-alt fw-bold icon-info"></i> Online</p>
-                <button class="course-card-btn"><a href="./registerHR.html" class="register-link">Sign Up <i class="bi bi-arrow-right"></i></a></button>
+                <p class="course-card-date m-0 py-1">
+                  <i class="fa-solid fa-headphones-simple" style="color: #478b80;"></i> 
+                  <span class="px-2">Mon, Tue, 24 & 25 feb - 6PM</span>
+                  </p>
+                <p class="course-card-location">
+                  <i class="bi bi-geo-alt fw-bold icon-info"></i> 
+                  <span class="px-2">Online</span></p>
+                <button class="course-card-btn"><a href="./registerHR.html" class="register-link">Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i></a></button>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-12 px-3">
             <div class="course-card d-flex p-3">
               <div class="course-card-img card-img-3 flex-shrink-0"></div>
-              <div class="course-card-info px-3">
+              <div class="course-card-info ps-4">
                 <p class="course-card-subject m-0"><i class="bi bi-circle-fill"></i> Data</p>
                 <h6 class="course-card-title">Start in Power BI W / Shkumbin Halabaku</h6>
-                <p class="course-card-date m-0 py-1"><i class="bi bi-headset icon-info"></i> Mon, Feb 3, 6:00PM</p>
-                <p class="course-card-location"><i class="bi bi-geo-alt fw-bold icon-info"></i> Online</p>
-                <button class="course-card-btn">Sign Up <i class="bi bi-arrow-right"></i></button>
+                <p class="course-card-date m-0 py-1">
+                  <i class="fa-solid fa-headphones-simple" style="color: #478b80;"></i> 
+                  <span class="px-2">Mon, Feb 3, 6:00PM</span>
+                </p>
+                <p class="course-card-location">
+                  <i class="bi bi-geo-alt fw-bold icon-info"></i> 
+                  <span class="px-2">Online</span></p>
+                <button class="course-card-btn">Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i></button>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-12 px-3">
             <div class="course-card d-flex p-3">
               <div class="course-card-img card-img-4 flex-shrink-0"></div>
-              <div class="course-card-info px-3">
+              <div class="course-card-info ps-4">
                 <p class="course-card-subject m-0"><i class="bi bi-circle-fill"></i> Marketing</p>
                 <h6 class="course-card-title">Email marketing basics for beginners w / Zeki Veliu</h6>
-                <p class="course-card-date m-0 py-1"><i class="bi bi-headset icon-info"></i> Thur, Fri, 20 & 21 feb - 6pm</p>
-                <p class="course-card-location"><i class="bi bi-geo-alt fw-bold icon-info"></i> Online</p>
-                <button class="course-card-btn"><a href="./registerMB.html" class="register-link">Sign Up <i class="bi bi-arrow-right"></i></a></button>
+                <p class="course-card-date m-0 py-1">
+                  <i class="fa-solid fa-headphones-simple" style="color: #478b80;"></i> 
+                  <span class="px-2">Mon, Tue, 18 & 19 feb - 6PM</span>
+                </p>
+                <p class="course-card-location">
+                  <i class="bi bi-geo-alt icon-info"></i> 
+                  <span class="px-2">Online</span></p>
+                  <button class="course-card-btn"><a href="./registerMB.html" class="register-link">Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i></a></button>           
               </div>
             </div>
           </div>
@@ -134,6 +162,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Explore section -->
     <div class="explore-section">
       <h2 class="explore-title">
         Want the full experience to help you start fresh?
@@ -146,8 +176,9 @@
       <button class="explore-btn">Explore</button>
     </div>
 
+    <!-- Contact section -->
     <div class="contact-section">
-      <div class="row g-5 m-2">
+      <div class="row g-5">
         <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
           <h4 class="contact-rightside ps-md-5" id="contact-title">Need Help Choosing?</h4>
         </div>
@@ -157,7 +188,7 @@
               <div class="contact-img"></div>
             </div>
 
-            <div class="col-12 col-md-8 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-md-8 d-flex align-items-center justify-content-start ps-5">
               <p class="contact-text-info text-center">
                 Speak with our Student Advisor, Dardania, and through
                 personalized counseling, find the program that's right for you.
@@ -168,23 +199,27 @@
           <div class="row p-1 text-center mt-5">
             <div class="col-12 col-md-4 mb-4 mb-md-0">
               <h5 class="contact-title mb-4">Give us a call</h5>
-              <p class="contact-paragraph">
-                <i class="bi bi-telephone px-1"></i>
+              <p class="contact-paragraph d-flex justify-content-center align-items-center">
+                <i class="material-symbols-outlined px-1">
+                  call
+                  </i>
                 +383 49 334 437
               </p>
             </div>
             <div class="col-12 col-md-4 mb-4 mb-md-0">
               <h5 class="contact-title mb-4">Sent us an email</h5>
-              <h5 class="contact-paragraph ">
-                <i class="bi bi-display d-none d-md-inline"></i>
+              <h5 class="contact-paragraph d-flex justify-content-center align-items-center">
+                <i class="material-symbols-outlined">
+                  contact_mail
+                  </i>
                 <a href="#" class="contact-paragraph-a">contact@creativehubkos.com</a>
               </h5>
             </div>
             <div class="col-12 col-md-4">
               <h5 class="contact-title mb-3">Or schedule an online meeting</h5>
               <button class="contact-btn">
-                <i class="bi bi-people contact-icon"></i>
-                Schedule meeting
+                <i class="bi bi-people"></i>
+                <span>Schedule meeting</span>
               </button>
             </div>
           </div>
@@ -192,19 +227,20 @@
       </div>
     </div>
 
+    <!-- Footer section -->
     <div class="page-footer">
       <div class="row columns-footer g-5">
         <div class="col-12 col-md-3">
           <div class="footer-logo mb-3">
             <img src="./images/footer-logo.png" alt="foooter-logo" width="200px">
           </div>
-          <h6 class="footer-title mb-5">
+          <h6 class="footer-title-socials mb-5">
             Successful careers <b>made possible</b>.
           </h6>
           <p class="footer-text my-1">
             Follow us on Social Media
           </p>
-          <div class="footer-icons d-flex justify-content-between fs-4">
+          <div class="footer-icons d-flex justify-content-around  fs-3">
             <i class="bi bi-facebook"></i>
             <i class="bi bi-instagram"></i>
             <i class="bi bi-linkedin"></i>
@@ -246,5 +282,8 @@
     </div>
     
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/2b9dd81da9.js" crossorigin="anonymous"></script>
   </body>
 </html>

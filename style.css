@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap'); */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: sans-serif;
-}
 
+
+/* Header section */
 .header {
   background-color: #071336;
   color: white;
@@ -15,16 +16,18 @@ body {
   align-items: end;
   padding: 7px 100px;
   font-weight: 400;
+  font-size: 1em;
 }
 
 .small-screen-navbar {
   display: none !important;
 }
 
+/* Navigation bar */
 .page-navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px;
+  padding: 25px 90px;
   color: #071336;
   background-color: transparent;
 }
@@ -56,6 +59,8 @@ body {
   font-weight: 500;
 }
 
+
+/* Background for big screen */
 .main-content-bg {
   display: none;
   position: absolute;
@@ -71,31 +76,37 @@ body {
   z-index: -1;
 }
 
+
+/* Main content / Cards */
 .main-content {
   width: 85%;
-  margin: 80px auto;
+  margin: 70px auto;
 }
 
 .main-content-text {
-  width: 50%;
-  margin: 10px auto;
+  width: 60%;
+  margin: 0px auto;
   text-align: center;
   color: #000;
 }
 
 .main-content-text-title {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 50px;
   margin-bottom: 30px;
 }
 
 .main-content-text-paragraph {
   padding: 0 60px;
+  font-size: 18px;
 }
 
+
+/* Cards */
 .main-content-cards {
-  width: 80%;
-  margin: 80px auto;
+  width: 90%;
+  margin: 70px auto;
 }
 
 .register-link {
@@ -104,8 +115,10 @@ body {
 }
 
 .course-card {
+  width: 90%;
   border: 1px solid black;
   background-color: white;
+  margin: 7px 0;
   display: flex;
   align-items: stretch;
 }
@@ -115,7 +128,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  width: 180px;
+  width: 160px;
   height: 220px;
 }
 
@@ -125,7 +138,7 @@ body {
 
 .card-img-2 {
   background-image: url("./images/card-img-2.png");
-  background-position: 33%;
+  background-position: 35%;
 }
 
 .card-img-3 {
@@ -143,6 +156,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  font-weight: 500;
+}
+
+.course-card-subject{
+  font-size: 16px;
 }
 
 .bi-circle-fill {
@@ -151,13 +169,19 @@ body {
 
 .course-card-title {
   text-transform: uppercase;
-  font-weight: 600;
-  margin: 10px 0;
+  font-weight: 700;
+  margin: 8px 0;
   line-height: 25px;
+  font-size: 18px;
 }
 
 .icon-info {
+  font-weight: 900;
   color: #478b80;
+}
+
+.course-card-date{
+  font-size: 16px;
 }
 
 .course-card-btn,
@@ -169,44 +193,53 @@ body {
   color: #071336;
   width: auto;
   align-self: flex-start;
+  font-weight: 500;
+  font-size: 16px;
 }
 
+
+/* Explore section */
 .explore-section {
   background-color: #071336;
   text-align: center;
   color: white;
   padding: 100px 0;
 }
-
 .explore-title {
   text-transform: uppercase;
   margin-bottom: 25px;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 36px;
 }
 .explore-subtitle {
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 24px;
 }
-
 .explore-btn {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   margin-top: 30px;
+  padding: 10px 30px;
 }
 
+
+/* Contact section */
 .contact-section {
-  width: 95%;
   margin: 60px auto;
   color: #071336;
+  width: 90%;
 }
 
 .contact-rightside {
-  font-weight: 600;
+  width: 100%;
+  font-weight: 700;
+  font-size: 32px;
 }
 
 .contact-img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border: 6px solid #071336;
   background-image: url("./images/contact-img-final.jpg");
   background-size: cover;
@@ -216,11 +249,19 @@ body {
 }
 
 .contact-text-info {
-  width: 85%;
+  width: 80%;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .contact-title {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.contact-paragraph{
+  font-weight: 500;
+  font-size: 22px;
 }
 
 .contact-paragraph-a {
@@ -232,14 +273,17 @@ body {
   border: none;
   background-color: #75fa9e;
   color: #071336;
-  padding: 10px 15px;
-  font-weight: 600;
+  padding: 10px 22px;
+  font-weight: 700;
   border-radius: 7px;
+  font-size: 18px;
 }
 
 .contact-icon {
   padding-right: 5px;
 }
+
+/* Footer section */
 
 .page-footer {
   background-color: #071336;
@@ -255,8 +299,13 @@ body {
   color: #8d93a5;
 }
 
+.footer-title-socials{
+  font-weight: 400;
+}
+
 .footer-title {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .footer-icons {
@@ -280,9 +329,7 @@ body {
   .header {
     background-color: #fff;
     color: #071336;
-  }
-  .header-number {
-    font-weight: bold;
+    font-weight: 500;
   }
   .page-navbar {
     background-color: #071336;
@@ -362,25 +409,29 @@ body {
 }
 
 @media (max-width: 768px) {
+  .main-content-text{
+    width: 100%;
+    padding: 20px 17px;
+  }
+  .main-content-cards{
+    width: 100%;
+    margin-left: 20px;
+  }
   .course-card {
     flex-direction: row;
     align-items: center;
   }
-
   .course-card-img {
     width: 100px;
     height: 100px;
     align-self: flex-start;
   }
-
   .course-card-info {
     padding-left: 10px;
   }
-
   .course-card-title {
     font-size: 18px;
   }
-
   .course-card-btn {
     padding: 6px 15px;
     font-size: 14px;
@@ -388,21 +439,17 @@ body {
   .contact-section {
     padding: 10px;
   }
-
   .contact-img {
     width: 130px;
     height: 130px;
   }
-
   .contact-text-info {
     font-size: 14px;
   }
-
   .contact-btn {
     font-size: 16px;
     padding: 12px 20px;
   }
-
   .footer-logo img {
     width: 100%;
     max-width: 200px;
@@ -431,7 +478,7 @@ body {
   }
 
   .course-card-btn {
-    padding: 4px 10px;
+    padding: 10px 20px;
     font-size: 12px;
   }
 }
