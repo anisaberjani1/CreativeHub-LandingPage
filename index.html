@@ -99,10 +99,8 @@
                   <i class="bi bi-geo-alt fw-bold icon-info"></i>
                   <span class="px-2">Online</span>
                 </p>
-                <button class="course-card-btn">
-                  <a href="./registerRJ.html" class="register-link">
-                    Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i>
-                  </a>      
+                <button type="button" class="course-card-btn" data-bs-toggle="modal" data-bs-target="#registerModalReact">
+                  Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i>
                 </button>
               </div>
             </div>
@@ -120,7 +118,9 @@
                 <p class="course-card-location">
                   <i class="bi bi-geo-alt fw-bold icon-info"></i> 
                   <span class="px-2">Online</span></p>
-                <button class="course-card-btn"><a href="./registerHR.html" class="register-link">Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i></a></button>
+                  <button type="button" class="course-card-btn" data-bs-toggle="modal" data-bs-target="#registerModalHR">
+                    Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i>
+                  </button>
               </div>
             </div>
           </div>
@@ -154,7 +154,9 @@
                 <p class="course-card-location">
                   <i class="bi bi-geo-alt icon-info"></i> 
                   <span class="px-2">Online</span></p>
-                  <button class="course-card-btn"><a href="./registerMB.html" class="register-link">Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i></a></button>           
+                  <button type="button" class="course-card-btn" data-bs-toggle="modal" data-bs-target="#registerModalMarketing">
+                    Sign Up <i class="fa-solid fa-arrow-right" style="color: #071336;"></i>
+                  </button> 
               </div>
             </div>
           </div>
@@ -162,6 +164,105 @@
         </div>
       </div>
     </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="registerModalReact" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl p-0 ">
+        <div class="modal-content">
+            <div class="modal-main-content d-flex justify-content-center align-items-center">
+              <div class="form-content">
+                <h2 class="form-title px-3">
+                  Introduction to React w/ Ragip Gjinovci
+                </h2>
+                <div class="form-subtitle my-4">
+                  <h5 class="form-subtitle-date">Thur, Fri, 20 & 21 feb-6PM</h5>
+                  <h5 class="form-subtitle-location">
+                      <span class="number-span"> I.</span> 
+                      <span class="icon-span-sm-screen">
+                          <i class="bi bi-geo-alt"></i>
+                      </span>
+                      Online
+                  </h5>   
+                </div>
+                <form action="#" class="register-form">
+                  <input type="text" placeholder="Name and Surname" class="form-input" />
+                  <input type="email" placeholder="Email Address" class="form-input" />
+                  <input type="text" placeholder="Phone" class="form-input" />
+                  <button class="form-btn" type="submit">Register</button>
+                </form>
+              </div>
+              <div class="register-img">
+                <img src="./images/register-img.jpg" alt="photo" width="352" height="345" />
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="registerModalHR" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl p-0 ">
+        <div class="modal-content">
+            <div class="modal-main-content d-flex justify-content-center align-items-center">
+              <div class="form-content">
+                <h2 class="form-title px-3">
+                  Bazat e Rekrutimit w/ Hana Gashi Salihu
+                </h2>
+                <div class="form-subtitle my-4">
+                  <h5 class="form-subtitle-date">Mon, Tue, 24 & 25 feb-6PM</h5>
+                  <h5 class="form-subtitle-location">
+                      <span class="number-span"> I.</span> 
+                      <span class="icon-span-sm-screen">
+                          <i class="bi bi-geo-alt"></i>
+                      </span>
+                      Online
+                  </h5>   
+                </div>
+                <form action="#" class="register-form">
+                  <input type="text" placeholder="Name and Surname" class="form-input" />
+                  <input type="email" placeholder="Email Address" class="form-input" />
+                  <input type="text" placeholder="Phone" class="form-input" />
+                  <button class="form-btn" type="submit">Register</button>
+                </form>
+              </div>
+              <div class="register-img">
+                <img src="./images/register-img.jpg" alt="photo" width="352" height="345" />
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="registerModalMarketing" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl p-0 ">
+        <div class="modal-content">
+            <div class="modal-main-content d-flex justify-content-center align-items-center">
+              <div class="form-content">
+                <h2 class="form-title px-3">
+                  Bazat e Email Marketing për fillestarë w/ Zeki Veliu
+                </h2>
+                <div class="form-subtitle my-4">
+                  <h5 class="form-subtitle-date">Mon, Tue, 18 & 19 feb-6PM</h5>
+                  <h5 class="form-subtitle-location">
+                      <span class="number-span"> I.</span> 
+                      <span class="icon-span-sm-screen">
+                          <i class="bi bi-geo-alt"></i>
+                      </span>
+                      Online
+                  </h5>   
+                </div>
+                <form action="#" class="register-form">
+                  <input type="text" placeholder="Name and Surname" class="form-input" />
+                  <input type="email" placeholder="Email Address" class="form-input" />
+                  <input type="text" placeholder="Phone" class="form-input" />
+                  <button class="form-btn" type="submit">Register</button>
+                </form>
+              </div>
+              <div class="register-img">
+                <img src="./images/register-img.jpg" alt="photo" width="382" height="375" />
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
 
     <!-- Explore section -->
     <div class="explore-section">
@@ -188,7 +289,7 @@
               <div class="contact-img"></div>
             </div>
 
-            <div class="col-12 col-md-8 d-flex align-items-center justify-content-start ps-5">
+            <div class="col-12 col-md-8 d-flex align-items-center justify-content-start ps-5 contact-info-box">
               <p class="contact-text-info text-center">
                 Speak with our Student Advisor, Dardania, and through
                 personalized counseling, find the program that's right for you.
@@ -196,7 +297,7 @@
             </div>
           </div>
 
-          <div class="row p-1 text-center mt-5">
+          <div class="row p-1 text-center mt-3">
             <div class="col-12 col-md-4 mb-4 mb-md-0">
               <h5 class="contact-title mb-4">Give us a call</h5>
               <p class="contact-paragraph d-flex justify-content-center align-items-center">
@@ -209,7 +310,7 @@
             <div class="col-12 col-md-4 mb-4 mb-md-0">
               <h5 class="contact-title mb-4">Sent us an email</h5>
               <h5 class="contact-paragraph d-flex justify-content-center align-items-center">
-                <i class="material-symbols-outlined">
+                <i class="material-symbols-outlined email-icon">
                   contact_mail
                   </i>
                 <a href="#" class="contact-paragraph-a">contact@creativehubkos.com</a>
@@ -240,7 +341,7 @@
           <p class="footer-text my-1">
             Follow us on Social Media
           </p>
-          <div class="footer-icons d-flex justify-content-around  fs-3">
+          <div class="footer-icons d-flex justify-content-start gap-4 fs-2">
             <i class="bi bi-facebook"></i>
             <i class="bi bi-instagram"></i>
             <i class="bi bi-linkedin"></i>
@@ -248,7 +349,7 @@
             <i class="bi bi-youtube"></i>
           </div>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-3 second-list-footer">
           <h5 class="footer-title mb-4 pt-2">Academies</h5>
           <ul class="footer-list list-unstyled">
             <li class="footer-list-item my-3">Digital Marketing</li>
@@ -257,7 +358,7 @@
             <li class="footer-list-item my-3">Human Resources</li>
           </ul>
         </div>
-        <div class="col-12 col-md-2">
+        <div class="col-12 col-md-3">
           <h5 class="footer-title mb-4 pt-2">Campuses</h5>
           <ul class="footer-list list-unstyled">
             <li class="footer-list-item my-3">Creative Hub Kosovo</li>
@@ -265,7 +366,7 @@
             <li class="footer-list-item my-3">Creative Hub Macedonia</li>
           </ul>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-3 footer-last-list">
           <h5 class="footer-title mb-4 pt-2">Job Placement Resources</h5>
           <ul class="footer-list list-unstyled">
             <li class="footer-list-item my-3">Tech Job Fair</li>

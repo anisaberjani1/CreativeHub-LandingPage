@@ -197,7 +197,78 @@
   font-size: 16px;
 }
 
+/* Modal */
+.modal-main-content{
+  width: 90%;
+  margin: 40px auto;
+  gap: 40px;
+  text-align: center;
+}
 
+.modal-content{
+  border-radius: 0;
+  border: 7px solid #071336;
+}
+.form-title{
+  font-size: 30px;
+  font-weight: 600;
+}
+.form-subtitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-subtitle-date,
+.form-subtitle-location
+{
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.icon-span-sm-screen{
+  display: none;
+}
+
+.number-span {
+  display: inline-block; 
+}
+
+.register-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-content{
+  color: #071336;
+  text-align: center;
+}
+
+.form-input,
+.form-btn
+{
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px solid #cdd0d7;
+  font-size: 16px;
+}
+
+.form-input::placeholder{
+  color: #939393;
+}
+
+.form-btn{
+  background-color: #75fa9e;
+  border: none;
+  color: #071336;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
 /* Explore section */
 .explore-section {
   background-color: #071336;
@@ -235,6 +306,7 @@
   width: 100%;
   font-weight: 700;
   font-size: 32px;
+  text-align: center;
 }
 
 .contact-img {
@@ -283,24 +355,30 @@
   padding-right: 5px;
 }
 
-/* Footer section */
+.email-icon{
+  display: flex;
+}
 
+/* Footer section */
 .page-footer {
   background-color: #071336;
   color: white;
 }
 
 .columns-footer {
-  width: 90%;
+  width: 88%;
   margin: 0 auto;
 }
 
 .footer-text {
   color: #8d93a5;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .footer-title-socials{
   font-weight: 400;
+  font-size: 17px;
 }
 
 .footer-title {
@@ -313,7 +391,8 @@
 }
 
 .footer-list {
-  font-weight: lighter;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .footer-social-media {
@@ -321,6 +400,16 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+}
+.second-list-footer{
+  padding-left: 70px;
+}
+.footer-last-list{
+  padding: 0;
+}
+.footer-bottom{
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* responsivity */
@@ -406,15 +495,16 @@
     width: 100%;
     max-width: 200px;
   }
+
 }
 
 @media (max-width: 768px) {
   .main-content-text{
     width: 100%;
-    padding: 20px 17px;
+    padding: 20px;
   }
   .main-content-cards{
-    width: 100%;
+    width: 95%;
     margin-left: 20px;
   }
   .course-card {
@@ -436,32 +526,129 @@
     padding: 6px 15px;
     font-size: 14px;
   }
+
+  .contact-rightside{
+    width: 90%;
+    text-align: center;
+  }
+  .contact-title{
+    font-size: 22px;
+  }
   .contact-section {
-    padding: 10px;
+    padding: 5px;
   }
   .contact-img {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
   }
+
   .contact-text-info {
-    font-size: 14px;
+    width: 90%;
+    margin-top: 10px;
+    font-size: 18px;
   }
+  .contact-paragraph{
+    font-size: 22px;
+  }
+
+  .email-icon{
+    display: none;
+  }
+
   .contact-btn {
-    font-size: 16px;
-    padding: 12px 20px;
+    font-size: 20px;
+    padding: 15px 25px;
+  }
+
+  .explore-section{
+    width: 100%;
+    padding: 100px 25px;
+  }
+  .explore-title{
+    font-size: 28px;
+  }
+  .explore-subtitle{
+    font-size: 18px;
   }
   .footer-logo img {
     width: 100%;
     max-width: 200px;
   }
 
-  .footer-title,
+  .footer-title-socials{
+    font-size: 16px;
+  }
+
+  .footer-text{
+    color: white;
+    font-size: 15px;
+  }
+
   .footer-list-item {
     text-align: start;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .footer-title{
+    text-align: start;
+    font-size: 16px;
+  }
+
+  .second-list-footer,
+  .footer-last-list{
+    padding: 0 25px;
   }
 
   .footer-bottom {
     border-top: 1px solid #c1c4cd;
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+  /* modal */
+  .modal-main-content {
+    margin: 50px auto;
+    padding: 10px;
+  }
+
+  .form-title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .form-subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-subtitle-date,
+  .form-subtitle-location{
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .icon-span-sm-screen{
+    display: inline-block;
+    color: #75fa9e;
+  }
+  .number-span{
+    display: none;
+  }
+
+  .form-input,
+  .form-btn {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .form-btn{
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .register-img {
+    display: none;
   }
 }
 
